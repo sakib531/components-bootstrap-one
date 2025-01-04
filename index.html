@@ -25,12 +25,12 @@
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ">
+              <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link active" href="#"> HELLO </a></li>
                 <li class="nav-item"><a class="nav-link active" href="#"> HELLO </a></li>
                 <li class="nav-item"><a class="nav-link active" href="#"> HELLO </a></li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toogle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> HELLO TWO </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> HELLO TWO </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -38,6 +38,10 @@
                   </ul>
                 </li>
               </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             </div>
 
 
@@ -53,6 +57,189 @@
 
 
 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            
+            <a class="navbar-brand " href="#"> BRAND LOGO </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              
+              <form class="d-flex border-end border-success" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-bg-success me-3" type="submit">Search</button>
+              </form>
+
+              <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link active" href="#"> HELLO </a></li>
+                <li class="nav-item"><a class="nav-link " href="#"> HELLO </a></li>
+                <li class="nav-item"><a class="nav-link " href="#"> HELLO </a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> HELLO TWO </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+
+
+            
+        
+          </div>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item "> 
+            <a class="nav-link active text-bg-success" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+
+          <form class="d-flex ms-auto pb-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-bg-success me-3" type="submit">Search</button>
+          </form>
+
+        </ul>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          IT"S A LINK
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          BUTTON
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              data-bs-target , data-bs-toggle is needed for button but for link we need data-bs-toggle and also fill the href with offcanvasExample
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FIRST OPTION</a></li>
+                <li><a class="dropdown-item" href="#">SECOND ACTION</a></li>
+                <li><a class="dropdown-item" href="#"> THIRD OPTION </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
+    
+    <div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas toggle.</div>
+    
+    <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">11</a></li>
+            <li class="page-item"><a class="page-link" href="#">12</a></li>
+            <li class="page-item"><a class="page-link" href="#">13</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   
 
 
